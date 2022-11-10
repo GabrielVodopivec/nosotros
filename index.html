@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            font-family: 'Poppins', sans-serif;
+            font-size: 16px;
+        }
+
+        h1,
+        h2,
+        h3 {
+            text-align: center;
+        }
+
+        .title-sobre-nosotros {
+            background-color: rgba(102, 194, 237, 0.56);
+            margin-top: 30px;
+            padding: 20px 0;
+        }
+
+        .sobre-nosotros {
+            text-align: left;
+            padding: 10px;
+        }
+
+        .card-container {
+            width: 100%;
+            padding-top: 15px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+
+        }
+
+        .card {
+            border-radius: 15px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            border: 1px solid rgba(102, 194, 237, 0.369);
+            border-top: none;
+            padding-bottom: 5px;
+            gap: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 250px;
+            height: 400px;
+        }
+
+        @media screen and (max-width: 1100px) {
+            .card {
+                width: 300px;
+            }
+        }
+
+        .image-container {
+            position: relative;
+            /* background-image: url('http://ongapi.alkemy.org/storage/Y3jaIR2g8G.jpeg'); */
+            /* background-image: url('http://ongapi.alkemy.org/storage/xGK239X9xt.jpeg'); */
+            background-position: top;
+            background-size: cover;
+            box-sizing: border-box;
+            width: 100%;
+            height: 250px;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            overflow-x: hidden;
+            overflow-y: hidden;
+        }
+
+        .image-container p {
+            box-sizing: border-box;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 30px;
+            padding: 5px;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            text-align: center;
+            margin: 0;
+            color: rgb(247, 246, 245);
+            line-height: 20px;
+            background-color: rgba(0, 0, 0, 0.73);
+        }
+
+        .description-container {
+            border-radius: 5px;
+            width: 100%;
+            height: 100px;
+            overflow-y: scroll;
+        }
+
+        .description-container p {
+            margin: 0;
+            padding: 3px 5px;
+            font-size: .75em;
+        }
+
+        .description-container::-webkit-scrollbar {
+            width: 5px;
+            background-color: transparent;
+            border-radius: 5px;
+        }
+
+        .description-container::-webkit-scrollbar-thumb {
+            background-color: rgba(102, 194, 237, 0.802);
+            border-radius: 5px;
+        }
+
+        .media-container {
+            box-sizing: border-box;
+            width: min-content;
+            padding: 5px 10px;
+            display: flex;
+            gap: 20px;
+        }
+
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 30px;
+            transition: transform 300ms;
+        }
+
+        .logo:hover {
+            transform: scale(120%);
+        }
+
+        .logo>a {
+            height: 30px;
+        }
+
+        img {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        @media screen and (max-width: 450px) {
+            .card-container {
+                box-sizing: border-box;
+                padding: 10px 10px 0 10px;
+                width: 100%;
+                height: 450px;
+                display: flex;
+                justify-content: flex-start;
+                flex-flow: row nowrap;
+                overflow-x: scroll;
+            }
+
+            .card-container::-webkit-scrollbar {
+                height: 10px;
+                background-color: transparent;
+                border-radius: 5px;
+            }
+
+            .card-container::-webkit-scrollbar-thumb {
+                background-color: rgba(102, 194, 237, 0.802);
+                border-radius: 5px;
+            }
+
+            .card {
+                width: 250px;
+                flex-shrink: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Nosotros</h1>
+    <h2>Conocé a nuestro equipo!</h2>
+    <div class="card-container">
+        <div class="card">
+            <div style="background-image: url(./assets/avatar_member.jpg)" class="image-container">
+                <p>Carlos</p>
+            </div>
+            <div class="description-container">
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi animi, qui nam numquam reiciendis
+                    distinctio et dicta molestias fugiat quam. Voluptatum provident eligendi nam quam sed atque ipsam,
+                    blanditiis cum!
+                </p>
+            </div>
+            <div class="media-container">
+                <div class="logo">
+                    <a href="https://www.linkedin.com/" target="_blank">
+                        <img src="./assets/linkedin_icon.png" alt="face">
+                    </a>
+                </div>
+                <div class="logo">
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <img src="./assets/face_icon.png" alt="face">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div style="background-image: url(./assets/avatar_member_2.png)" class="image-container">
+                <p>Gonza</p>
+            </div>
+            <div class="description-container">
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi animi, qui nam numquam reiciendis
+                    distinctio et dicta molestias fugiat quam. Voluptatum provident eligendi nam quam sed atque ipsam,
+                    blanditiis cum!
+                </p>
+            </div>
+            <div class="media-container">
+                <div class="logo">
+                    <a href="https://www.linkedin.com/" target="_blank">
+                        <img src="./assets/linkedin_icon.png" alt="face">
+                    </a>
+                </div>
+                <div class="logo">
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <img src="./assets/face_icon.png" alt="face">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div style="background-image: url(./assets/avatar_member_3.png)" class="image-container">
+                <p>Natalia Natalia</p>
+            </div>
+            <div class="description-container">
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi animi, qui nam numquam reiciendis
+                    distinctio et dicta molestias fugiat quam. Voluptatum provident eligendi nam quam sed atque ipsam,
+                    blanditiis cum!
+                </p>
+            </div>
+            <div class="media-container">
+                <div class="logo">
+                    <a href="https://www.linkedin.com/" target="_blank">
+                        <img src="./assets/linkedin_icon.png" alt="face">
+                    </a>
+                </div>
+                <div class="logo">
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <img src="./assets/face_icon.png" alt="face">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div style="background-image: url(./assets/avatar_member_4.png)" class="image-container">
+                <p>Carla</p>
+            </div>
+            <div class="description-container">
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi animi, qui nam numquam reiciendis
+                    distinctio et dicta molestias fugiat quam. Voluptatum provident eligendi nam quam sed atque ipsam,
+                    blanditiis cum!
+                </p>
+            </div>
+            <div class="media-container">
+                <div class="logo">
+                    <a href="https://www.linkedin.com/" target="_blank">
+                        <img src="./assets/linkedin_icon.png" alt="face">
+                    </a>
+                </div>
+                <div class="logo">
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <img src="./assets/face_icon.png" alt="face">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div style="background-image: url(./assets/espacio.jpg)" class="image-container">
+                <p>Armstrong</p>
+            </div>
+            <div class="description-container">
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi animi, qui nam numquam reiciendis
+                    distinctio et dicta molestias fugiat quam. Voluptatum provident eligendi nam quam sed atque ipsam,
+                    blanditiis cum!
+                </p>
+            </div>
+            <div class="media-container">
+                <div class="logo">
+                    <a href="https://www.linkedin.com/" target="_blank">
+                        <img src="./assets/linkedin_icon.png" alt="face">
+                    </a>
+                </div>
+                <div class="logo">
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <img src="./assets/face_icon.png" alt="face">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <h3 class="title-sobre-nosotros">Nuestra historia</h3>
+    <p class="sobre-nosotros">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur, eos incidunt
+        quisquam ratione iste autem
+        molestiae neque sequi tempora accusamus, eum ipsum distinctio delectus inventore sed sint. Ex, id temporibus.
+        Aperiam aspernatur et recusandae, qui voluptates modi eveniet pariatur esse repellendus reprehenderit nihil.
+        Culpa natus harum ea blanditiis laboriosam dolores in, reprehenderit, ex esse voluptatem qui! Voluptatem sed
+        consequatur asperiores.
+    </p>
+</body>
+
+</html>
