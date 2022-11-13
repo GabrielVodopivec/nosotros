@@ -1,1 +1,1 @@
- <a href="https://gabrielvodopivec.github.io/nosotros/">Link a la página</a>
+ <a href="https://gabrielvodopivec.github.io/nosotros/" target="_blank">Link a la página</a>
